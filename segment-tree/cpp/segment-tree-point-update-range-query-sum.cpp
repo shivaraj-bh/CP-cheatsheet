@@ -6,8 +6,6 @@ using namespace std;
 struct data{
     //Change this to your convinence
     int val;
-    data(): val(0){};
-    data(int new_val):val(new_val){};
 };
 struct SegmentTree{
     int N;
