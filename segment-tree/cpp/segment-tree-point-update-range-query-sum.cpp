@@ -10,11 +10,10 @@ struct data{
 struct SegmentTree{
     int N;
     vector<data> t;
-    vector<data> *arr;
-    SegmentTree(vector<data> &a){
+    vector<data> &arr;
+    SegmentTree(vector<data> &a):arr(a){
         N = (int)a.size();
         t.resize(4*N);
-        arr = &a;
         build();
     }
     //Change this to your convinence
