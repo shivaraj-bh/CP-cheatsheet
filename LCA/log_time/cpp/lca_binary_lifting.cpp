@@ -38,6 +38,6 @@ int main(){
     vector<vector<int>> adj({{1,2},{0,3,4},{0},{1},{1}});
     LCA lca = LCA(adj,5);
     // Expected value = 1
-    cout<<lca.lca(3,4)<<"\n";
+    cout<<lca.lca(4,3)<<"\n";
     return 0;
 }
